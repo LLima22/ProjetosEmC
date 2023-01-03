@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main(void)
+{
+	char nome[61];
+  float idade,h;
+  int RA;
+  
+  
+  
+  printf("Digite seu nome: ");
+  gets(nome);
+	
+  printf("Digie seu RA: ");
+  scanf("%d",&RA);
+  
+  printf("Digite sua altura: ");
+  scanf("%f",&h);
+  
+  printf("Digite sua idade: ");
+  scanf("%f",&idade);
+  
+  
+ printf("Seja bem vindo %s, seu RA %d eh na nossa faculdade, voce estar matriculado com sucesso",nome,RA);
+ getch();
+ 
+ 
+  return 0;
+}

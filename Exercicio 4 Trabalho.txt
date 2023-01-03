@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+#include <math.h> 
+
+float area,b,h;
+void calculaArea();
+
+
+
+int main(void){
+	printf("digite a base e a altura do triangulo \n");
+	scanf("%f %f",&b,&h);
+	calculaArea();
+
+}
+
+void calculaArea(){
+	area = b*h;
+	printf("A area do triangulo eh: %f",area);
+}

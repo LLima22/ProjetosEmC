@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+void main() {
+    int idade;
+    float altura;
+    bool baixo, alto, jovem, idoso, bebe, adulto, preadolecente, recemnascido;
+    
+    printf("Digite sua idade - ");
+    scanf("%d",&idade);
+    printf("Digite sua altura - ");
+    scanf("%f",&altura);
+    
+    baixo = altura < 1.80;
+    alto = altura >= 1.80;
+    jovem = idade < 18;
+    idoso = idade >= 18;
+    bebe = baixo==true || jovem==true;
+    adulto = idoso==true && alto==true;
+    preadolecente = idade == 13 || idade == 15 || idade == 16 || idade == 17 || idade == 14;
+    recemnascido = idade == 1;
+    
+    if(baixo==true) printf("Esta pessoa eh rebaixada!\n");
+    if(alto==true) printf("Esta pessoa tem uma altura perfeita!\n");
+    if(jovem==true) printf("Esta pessoa nao eh novinha!\n\n");
+    if(idoso==true) printf("Esta pessoa ja tem mais de idade!\n\n");
+    
+    if(bebe==true) printf("Esta pessoa eh um bebe !!!\n");
+    if(adulto==true) printf("Esta pessoa eh um adulto crescido!\n");
+    if(preadolecente==true) printf("Esta pessoa estÃ¡ na preadolecente !");
+    if(recemnascido==true) printf("Este eh recém nascido no ano 2000!");
+}

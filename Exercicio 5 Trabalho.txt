@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+#include <math.h> 
+
+float area, raio,v,h;
+void calculaBase();
+void calculaVolume();
+
+
+int main(void){
+	printf("digite o raio e a altura do cilindro \n");
+	scanf("%f %f",&raio,&h);
+	calculaBase();
+	printf("------------------------------------------\n");
+	calculaVolume();
+
+}
+
+void calculaBase(){
+	area = (raio*raio)*2;
+	printf("valor da base= %f \n",area);
+}
+
+void calculaVolume(){
+	v=area*h;
+	printf("O volume do cilindro eh %f",v);
+}
